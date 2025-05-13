@@ -1,0 +1,16 @@
+body {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  h2 {
+    font-weight: 700;
+  }
+  footer {
+    font-size: 0.9rem;
+    border-top: 3px solid #dc3545; /* vermelho bootstrap */
+  }
+    
