@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+section h2 {
+  font-weight: bold;
+}
+.carousel-item {
+  background-size: cover;
+  background-position: center;
+}
