@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,46 +9,53 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/js/scripts.js" defer></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
+
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="assets/img/logo-placeholder.png" alt="redSafe Logo" width="30" height="30" class="me-2">
-      <span class="fw-bold text-danger">redSafe</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#servicos">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#certificacoes">Certificações</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contato">Contato</a>
-        </li>
-      </ul>
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/img/logo.png" alt="redSafe Logo" width="30" height="30" class="me-2">
+        <p class="projectsafe">ProjectSafe</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificacoes">Certificações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Carrossel -->
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active bg-dark text-white text-center d-flex flex-column justify-content-center" style="height: 80vh;">
+      <div class="carousel-item active bg-dark text-white text-center d-flex flex-column justify-content-center"
+        style="height: 80vh;">
         <h1 class="display-4 fw-bold">Proteção Contra Incêndios</h1>
         <p class="lead">Soluções completas para sua empresa</p>
       </div>
-      <div class="carousel-item bg-danger text-white text-center d-flex flex-column justify-content-center" style="height: 80vh;">
+      <div class="carousel-item bg-danger text-white text-center d-flex flex-column justify-content-center"
+        style="height: 80vh;">
         <h1 class="display-4 fw-bold">Laudos Técnicos e Certificados</h1>
         <p class="lead">Regularize seu negócio com segurança</p>
       </div>
@@ -63,22 +71,33 @@
   <!-- Seções -->
   <section id="sobre" class="container py-5">
     <h2 class="text-center mb-4">Sobre a redSafe</h2>
-    <p class="text-center">Somos especialistas em prevenção e combate a incêndios. Atuamos com projetos técnicos, laudos, instalações e certificações exigidas pelo Corpo de Bombeiros.</p>
+    <p class="text-center">
+      A redSafe é especializada em engenharia de prevenção e combate a incêndios, oferecendo soluções completas para a
+      segurança de edificações comerciais, industriais, escolares, residenciais e demais estabelecimentos. Atuamos com
+      elaboração e execução de Projetos de Prevenção e Combate a Incêndio (PPCI), emissão de laudos técnicos,
+      atualização de certificados de aprovação e consultoria para regularização junto ao Corpo de Bombeiros (CBMERJ).
+      Nossa equipe técnica qualificada garante conformidade com as exigências legais e máxima segurança para seu
+      empreendimento.
+    </p>
   </section>
+
 
   <section id="servicos" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Nossos Serviços</h2>
       <div class="row g-4">
         <div class="col-md-4 text-center">
+          <img src="assets/img/foto1.jpg" alt="Ícone Projetos" width="300" height="300" class="mb-2">
           <h5>Projetos Técnicos</h5>
           <p>Elaboração e atualização de projetos de prevenção contra incêndio.</p>
         </div>
         <div class="col-md-4 text-center">
+          <img src="assets/img/foto1.jpg" alt="Ícone Projetos" width="300" height="300" class="mb-2">
           <h5>Laudos e Vistorias</h5>
           <p>Laudos técnicos assinados por engenheiros e vistorias completas.</p>
         </div>
         <div class="col-md-4 text-center">
+          <img src="assets/img/foto1.jpg" alt="Ícone Projetos" width="300" height="300" class="mb-2">
           <h5>Certificados</h5>
           <p>Regularização e renovação de AVCB e CLCB.</p>
         </div>
@@ -88,28 +107,100 @@
 
   <section id="certificacoes" class="container py-5">
     <h2 class="text-center mb-4">Certificações e Aprovações</h2>
-    <p class="text-center">Acompanhamos todo o processo junto ao Corpo de Bombeiros para garantir que sua edificação esteja dentro das normas legais.</p>
+    <p class="text-center">Acompanhamos todo o processo junto ao Corpo de Bombeiros para garantir que sua edificação
+      esteja dentro das normas legais.</p>
   </section>
 
-  <section id="contato" class="bg-light py-5">
+  <section id="depoimentos" class="bg-light py-5">
+    <h2>Veja o que nossos clientes dizem</h2>
+    <div class="reviews mx-auto">
+      <div class="review">
+        <div class="profile">
+          <img
+            src="https://lh3.googleusercontent.com/a-/ALV-UjVW0cI_0eRWeQni5bSk_zQ0IMcBhG4oZGxp4OHbpldqA_3MLygyoQ=w40-h40-c-rp-mo-ba5-br100"
+            alt="Foto do cliente">
+          <div class="details">
+            <strong>OAS 360</strong>
+            <small>07/07/2024</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="text">Empresa que recomendo! Pessoal atencioso e muito preocupado em atender com o máximo de
+          qualidade, nota 10 a toda equipe e eu super recomendo a todos.</p>
+      </div>
+
+      <div class="review">
+        <div class="profile">
+          <img
+            src="https://lh3.googleusercontent.com/a-/ALV-UjWksc_NcYusGzktfT4_g1aqBmXyj4h7y_qWnWNjQhh5y9N25Msg=w40-h40-c-rp-mo-br100"
+            alt="Foto do cliente">
+          <div class="details">
+            <strong>Camilla Estrella</strong>
+            <small>16/06/2023</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="text">Empresa séria com profissionais capacitados. Vale a pena cada centavo! Faço minhas obras sem dor
+          de cabeça. Nota 10!!!</p>
+      </div>
+
+      <div class="review">
+        <div class="profile">
+          <img src="https://via.placeholder.com/40" alt="Foto do cliente">
+          <div class="details">
+            <strong>Lucas Fernandes</strong>
+            <small>28/04/2023</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="text">Excelente serviço! Fiquei muito satisfeito com a atenção e o profissionalismo da equipe.
+          Recomendo fortemente!</p>
+      </div>
+
+      <div class="review">
+        <div class="profile">
+          <img src="https://via.placeholder.com/41" alt="Foto do cliente">
+          <div class="details">
+            <strong>Ana Carolina Silva</strong>
+            <small>10/03/2023</small>
+          </div>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="text">Superou minhas expectativas! Desde o primeiro contato até a finalização, tudo foi impecável.
+          Parabéns!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container py-5 text-center">
     <div class="container">
-      <h2 class="text-center mb-4">Fale Conosco</h2>
+      <div class="container text-center py-3">
+        <i class="bi bi-shield-check text-danger mb-2" style="font-size: 2em;"></i>
+        <h3>Pronto para garantir a segurança do seu negócio?</h3>
+        <p class="lead">Conte mais sobre sua necessidade! Nós podemos lhe ajudar!</p>
+      </div>
       <form class="row g-3">
         <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Seu nome">
+          <label for="nome" class="form-label"><i class="bi bi-person-fill me-2"></i> Seu nome:</label>
+          <input type="text" class="form-control" id="nome" placeholder="Seu nome">
         </div>
         <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="Seu email">
+          <label for="email" class="form-label"><i class="bi bi-envelope-fill me-2"></i> Seu email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Seu email">
         </div>
         <div class="col-12">
-          <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+          <label for="mensagem" class="form-label"><i class="bi bi-chat-left-text-fill me-2"></i> Sua mensagem:</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
         </div>
         <div class="col-12 text-center">
-          <button type="submit" class="btn btn-danger">Enviar</button>
+          <button type="submit" class="btn btn-danger"><i class="bi bi-send-fill me-2"></i> Enviar</button>
         </div>
       </form>
     </div>
   </section>
+
+  
+
 
   <!-- Rodapé -->
   <footer class="bg-dark text-white py-4 mt-5">
@@ -119,6 +210,11 @@
       <p class="mb-0">Telefone: (99) 99999-9999</p>
     </div>
   </footer>
+  <a href="https://wa.me/5521983662299" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2048px-WhatsApp.svg.png"
+      alt="WhatsApp">
+  </a>
 
 </body>
+
 </html>

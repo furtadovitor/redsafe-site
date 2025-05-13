@@ -1,10 +1,143 @@
 html {
   scroll-behavior: smooth;
 }
+
 section h2 {
   font-weight: bold;
+  text-align: center;
 }
+
 .carousel-item {
   background-size: cover;
   background-position: center;
+}
+
+.reviews {
+  display: grid; /* Altera o display para grid */
+  grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de igual largura */
+  gap: 20px; /* Mantém o espaçamento entre os itens */
+  max-width: 800px; /* Aumentei a largura máxima para acomodar duas colunas */
+  margin: 0 auto; /* Centraliza o grid na página */
+}
+
+.review {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.details small {
+  color: #888;
+  font-size: 0.8em;
+}
+
+.stars {
+  color: #f5b301;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #333;
+  font-size: 1em;
+}
+
+/* Opcional: Para telas menores, você pode voltar a exibir em uma única coluna */
+@media (max-width: 768px) {
+  .reviews {
+      grid-template-columns: 1fr;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; /* Cor verde do WhatsApp */
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Cor mais escura no hover */
+}
+
+.whatsapp-button img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Opcional: Para telas menores, você pode ajustar a posição ou tamanho */
+@media (max-width: 600px) {
+  .whatsapp-button {
+      width: 50px;
+      height: 50px;
+      bottom: 15px;
+      right: 15px;
+      font-size: 25px;
+  }
+
+  .whatsapp-button img {
+      width: 30px;
+      height: 30px;
+  }
+}
+
+
+.vermelho {
+  color: red;
+}
+
+.branco {
+  color: white;
+}
+
+.navbar-brand {
+  /* Outros estilos que você já possa ter para a navbar-brand */
+  display: flex;
+  align-items: center; /* Isso já ajuda no alinhamento vertical */
+}
+
+.navbar-brand img {
+  /* Estilos da sua logo */
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem; /* Espaçamento entre a logo e o texto */
+}
+
+.projectsafe {
+  font-size: 1.5em; /* Ou o tamanho que você preferir */
+  font-weight: bold;
+  background: linear-gradient(to right, red 50%, white 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  line-height: 30px; /* Define a altura da linha igual à altura da logo */
+  margin-bottom: 0; /* Remove qualquer margem inferior padrão do parágrafo */
 }
