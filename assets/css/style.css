@@ -242,3 +242,30 @@ section h2 {
     color: #333;
   }
 
+  .credenciais-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .credenciais-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .credenciais-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .credenciais-logos img {
+    max-height: 80px;
+    max-width: 150px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+  }
