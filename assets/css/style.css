@@ -269,3 +269,45 @@ section h2 {
     object-fit: contain;
     transition: filter 0.3s ease;
   }
+
+  .sobre-section {
+  padding: 60px 20px; /* Espaçamento interno superior e inferior, e laterais */
+  text-align: center; /* Centraliza o título */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+}
+
+.sobre-section h2 {
+  color: #333; /* Cor do título */
+  font-size: 2.5em; /* Tamanho do título */
+  margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+.sobre-bloco {
+  background-color: #fff; /* Cor de fundo dos blocos de texto */
+  padding: 30px; /* Espaçamento interno dos blocos */
+  margin: 20px auto; /* Espaçamento superior e inferior, e centraliza horizontalmente */
+  max-width: 800px; /* Largura máxima dos blocos */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  opacity: 0; /* Inicialmente invisível para o efeito de fade-in */
+  transform: translateY(20px); /* Inicialmente um pouco abaixo para o efeito de fade-in */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave para o efeito */
+}
+
+.sobre-bloco.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sobre-bloco p {
+  color: #555; /* Cor do texto */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+  font-size: 1.1em; /* Tamanho da fonte */
+}
+
+.sobre-bloco strong {
+  color: #ff5100; /* Cor para destacar palavras importantes */
+  font-weight: bold;
+}
+
+/* Adapte as cores e tamanhos conforme a identidade visual da sua landing page */
