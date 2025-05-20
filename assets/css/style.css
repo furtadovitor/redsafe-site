@@ -1,65 +1,79 @@
 html {
   scroll-behavior: smooth;
+  background-color: #ffffff; /* fundo branco */
+  color: #333333; /* texto preto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section h2 {
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
+  color: #d40000; /* vermelho escuro */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
 }
 
 .carousel-item {
   background-size: cover;
   background-position: center;
+  color: #000;
 }
 
 .reviews {
-  display: grid; /* Altera o display para grid */
-  grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de igual largura */
-  gap: 20px; /* Mantém o espaçamento entre os itens */
-  max-width: 800px; /* Aumentei a largura máxima para acomodar duas colunas */
-  margin: 0 auto; /* Centraliza o grid na página */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .review {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-6px);
 }
 
 .profile {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .profile img {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  border: 2px solid #d40000;
 }
 
 .details small {
-  color: #888;
-  font-size: 0.8em;
+  color: #666;
+  font-size: 0.85em;
 }
 
 .stars {
-  color: #f5b301;
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  color: #d40000;
+  font-size: 1.3em;
+  margin-bottom: 12px;
 }
 
 .text {
-  color: #333;
-  font-size: 1em;
+  color: #444;
+  font-size: 1.05em;
+  line-height: 1.5;
 }
 
-/* Opcional: Para telas menores, você pode voltar a exibir em uma única coluna */
 @media (max-width: 768px) {
   .reviews {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -69,97 +83,83 @@ section h2 {
   height: 60px;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366; /* Cor verde do WhatsApp */
+  background: linear-gradient(135deg, #1c8c00, #00ff22);
   color: #fff;
   border-radius: 50%;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; /* Remove o sublinhado do link */
+  text-decoration: none;
+  font-size: 30px;
+  z-index: 1000;
 }
 
-.whatsapp-button:hover {
-  background-color: #128c7e; /* Cor mais escura no hover */
-}
+
 
 .whatsapp-button img {
   width: 40px;
   height: 40px;
 }
 
-/* Opcional: Para telas menores, você pode ajustar a posição ou tamanho */
 @media (max-width: 600px) {
   .whatsapp-button {
-      width: 50px;
-      height: 50px;
-      bottom: 15px;
-      right: 15px;
-      font-size: 25px;
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 25px;
   }
 
   .whatsapp-button img {
-      width: 30px;
-      height: 30px;
+    width: 30px;
+    height: 30px;
   }
 }
 
-
 .vermelho {
-  color: red;
+  color: #d40000;
 }
 
 .branco {
-  color: white;
+  color: #ffffff;
 }
 
 .navbar-brand {
-  /* Outros estilos que você já possa ter para a navbar-brand */
   display: flex;
-  align-items: center; /* Isso já ajuda no alinhamento vertical */
+  align-items: center;
+  color: #000;
 }
 
 .navbar-brand img {
-  /* Estilos da sua logo */
-  width: 30px;
-  height: 30px;
-  margin-right: 0.5rem; /* Espaçamento entre a logo e o texto */
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  filter: none;
 }
 
 .projectsafe {
-  font-size: 1.5em; /* Ou o tamanho que você preferir */
-  font-weight: bold;
-  background: linear-gradient(to right, red 50%, white 50%);
+  font-size: 1.6em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #d40000 60%, #999 60%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   display: inline-block;
-  line-height: 30px; /* Define a altura da linha igual à altura da logo */
-  margin-bottom: 0; /* Remove qualquer margem inferior padrão do parágrafo */
+  line-height: 32px;
+  margin-bottom: 0;
 }
 
-.firepro-container {
-  padding: 40px;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-}
 
-.firepro-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
 
 .firepro-left img {
   max-width: 400px;
   width: 100%;
   border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.firepro-left img:hover {
+  transform: scale(1.05);
 }
 
 .firepro-right {
@@ -168,20 +168,22 @@ section h2 {
 }
 
 .firepro-right h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 18px;
+  color: #d40000;
 }
 
 .firepro-right p {
-  font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.6;
+  font-size: 17px;
+  margin-bottom: 14px;
+  line-height: 1.7;
+  color: #555;
 }
 
 .firepro-counters {
   display: flex;
-  gap: 40px;
-  margin: 20px 0;
+  gap: 50px;
+  margin: 25px 0;
 }
 
 .counter-box {
@@ -189,125 +191,172 @@ section h2 {
 }
 
 .counter-number {
-  font-size: 32px;
-  font-weight: bold;
-  color: #AD1B03;
+  font-size: 36px;
+  font-weight: 800;
+  color: #d40000;
 }
 
 .counter-label {
-  font-size: 14px;
-  color: #333;
+  font-size: 15px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .firepro-button {
   display: inline-block;
-  background-color: #AD1B03;
+  background-color: #d40000;
   color: #fff;
-  padding: 12px 24px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .firepro-button:hover {
-  background-color: #8c1502;
+  background-color: #a30000;
 }
 
-  .faq-section {
-    padding: 40px 20px;
-    background-color: #f7f7f7;
-  }
-
-  .faq-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .faq-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .faq-item {
-    margin-bottom: 20px;
-  }
-
-  .faq-item h3 {
-    color: #ad1b03;
-    margin-bottom: 5px;
-  }
-
-  .faq-item p {
-    margin: 0;
-    color: #333;
-  }
-
-  .credenciais-section {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-  }
-
-  .credenciais-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-  }
-
-  .credenciais-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-
-  .credenciais-logos img {
-    max-height: 80px;
-    max-width: 150px;
-    object-fit: contain;
-    transition: filter 0.3s ease;
-  }
-
-  .sobre-section {
-  padding: 60px 20px; /* Espaçamento interno superior e inferior, e laterais */
-  text-align: center; /* Centraliza o título */
-  background-color: #f9f9f9; /* Cor de fundo suave */
+.credenciais-section {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+  color: #444;
 }
 
-.sobre-section h2 {
-  color: #333; /* Cor do título */
-  font-size: 2.5em; /* Tamanho do título */
-  margin-bottom: 30px; /* Espaçamento abaixo do título */
+.credenciais-section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  color: #d40000;
 }
 
-.sobre-bloco {
-  background-color: #fff; /* Cor de fundo dos blocos de texto */
-  padding: 30px; /* Espaçamento interno dos blocos */
-  margin: 20px auto; /* Espaçamento superior e inferior, e centraliza horizontalmente */
-  max-width: 800px; /* Largura máxima dos blocos */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  opacity: 0; /* Inicialmente invisível para o efeito de fade-in */
-  transform: translateY(20px); /* Inicialmente um pouco abaixo para o efeito de fade-in */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave para o efeito */
+.credenciais-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 45px;
 }
 
-.sobre-bloco.visible {
-  opacity: 1;
-  transform: translateY(0);
+.credenciais-logos img {
+  max-height: 80px;
+  max-width: 150px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
 }
 
-.sobre-bloco p {
-  color: #555; /* Cor do texto */
-  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
-  font-size: 1.1em; /* Tamanho da fonte */
+.credenciais-logos img:hover {
+  filter: brightness(1.2);
 }
 
-.sobre-bloco strong {
-  color: #ff5100; /* Cor para destacar palavras importantes */
-  font-weight: bold;
+.carousel-caption {
+  color: #000; /* cor padrão para texto */
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9); /* ajuda na leitura em imagens claras */
+  background-color: rgba(255, 255, 255, 0.1); /* fundo semitransparente para contraste */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 90%;
+  margin: auto;
 }
 
-/* Adapte as cores e tamanhos conforme a identidade visual da sua landing page */
+.carousel-caption h1 {
+  color: #070707; /* vermelho vivo */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.carousel-caption p {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+   #sobre {
+      background-color: #1a1a1a;
+      color: #eee;
+      padding: 60px 20px;
+    }
+
+    .firepro-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .firepro-content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .firepro-left img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(173, 27, 3, 0.8);
+      display: block;
+    }
+
+    .firepro-right h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #eee;
+    }
+
+    .firepro-right h2 span {
+      color: #AD1B03;
+    }
+
+    .firepro-right p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    .counter-container {
+      margin: 30px 0;
+      background: #111;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(173, 27, 3, 0.9);
+      text-align: center;
+    }
+
+    .counter-container p {
+      font-size: 1.4rem;
+      color: #eee;
+      line-height: 2.2rem;
+      margin: 0;
+    }
+
+    .counter {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #ff1a1a;
+      text-shadow: 2px 2px 8px #660000;
+      display: inline-block;
+      margin-right: 10px;
+      min-width: 50px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .firepro-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #AD1B03;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .firepro-button:hover {
+      background-color: #ff1a1a;
+    }

@@ -59,24 +59,3 @@ window.addEventListener("scroll", handleScroll);
 window.addEventListener("load", handleScroll);
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const counters = document.querySelectorAll('.counter');
-  const speed = 2; // Quanto mais baixo, mais rápido o contador
-
-  counters.forEach(counter => {
-    const target = parseInt(counter.getAttribute('data-target'));
-    let count = 0;
-
-    function updateCount() {
-      const increment = 1; // Vamos incrementar de 1 em 1
-      count = Math.min(count + increment, target);
-      counter.innerText = count;
-
-      if (count < target) {
-        setTimeout(updateCount, 50); // Aumentei o tempo do setTimeout para dar mais tempo entre os incrementos
-      }
-    }
-
-    updateCount();
-  });
-});
