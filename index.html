@@ -43,60 +43,102 @@
   </nav>
 
   <header id="home">
-    <div class="content">
-      <h1 class="display-4">TM FireSafe: Especialistas em Prevenção</h1>
-      <p class="lead zoom-in" style="animation-delay: 0.3s;">Sistemas que funcionam. Soluções que protegem.</p>
-      <button class="btn btn-danger btn-lg mt-4 zoom-in" style="animation-delay: 0.6s;"
-        onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">
-        Solicite um Orçamento
-      </button>
+    <div class="overlay"></div>
+    <div class="content container">
+      <h1>
+        LEGALIZAÇÃO DE SUA <br> EMPRESA
+        OU EDIFICAÇÃO <br> JUNTO AO
+        CORPO DE<br> BOMBEIROS
+      </h1>
+      <p class="lead">Elaboração de seu Projeto de Segurança contra Incêndio e Pânico e acompanhamento até a aprovação
+        junto ao Corpo de Bombeiros.</p>
 
+      <div class="contact-info mt-3">
+        <a href="https://wa.me/5521969258866" target="_blank"><i class="fas fa-phone"></i> (21) 96925-8866</a> |
+        <a href="mailto:contato@tmfiresafe.com"><i class="fas fa-envelope"></i> contato@tmfiresafe.com</a>
+      </div>
     </div>
   </header>
 
-
-
-  <section id="servicos" class="sobre-section bg-light">
+  <section id="servicos" class="sobre-section bg-light py-5">
     <div class="container">
-      <h2 class="section-title text-center">Nossos Serviços</h2>
+      <h2 class="section-title text-center mb-5">Nossos Serviços</h2>
       <div class="row g-4">
-        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-          <img src="assets/img/projeto.jpg" alt="Projetos Técnicos" class="img-fluid rounded mb-3"
-            style="max-height: 300px; object-fit: cover;">
-          <h5>Projetos Técnicos</h5>
-          <p>Projeto de prevenção contra incêndio e pânico completo! Do levantamento até a entrega do laudo de
-            exigências e vistorias</p>
+
+        <!-- Coluna 1 -->
+        <div class="col-12 col-md-4">
+          <div class="d-flex flex-column h-100 text-center p-3 border rounded position-relative overflow-hidden">
+            <img src="assets/img/projeto.jpg" alt="Projetos Técnicos" class="img-fluid rounded mb-3"
+              style="max-height: 300px; object-fit: cover;">
+            <div class="icon-hover"><i class="fa-solid fa-briefcase fa-2x"></i></div>
+            <h5>Projetos Técnicos</h5>
+            <p class="flex-grow-1">
+              Projeto de prevenção contra incêndio e pânico completo! Do levantamento até a entrega do laudo de
+              exigências e vistorias.
+            </p>
+          </div>
+
         </div>
-        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-          <img src="assets/img/laudo.jpg" alt="Laudos e Vistorias" class="img-fluid rounded mb-3"
-            style="max-height: 300px; object-fit: cover;">
-          <h5>Laudos e Vistorias</h5>
-          <p>Laudos técnicos e ARTs com regularização junto ao CBMERJ.</p>
+
+        <!-- Coluna 2 -->
+        <div class="col-12 col-md-4">
+          <div class="d-flex flex-column h-100 text-center p-3 border rounded position-relative overflow-hidden">
+            <img src="assets/img/laudo.jpg" alt="Laudos e Vistorias" class="img-fluid rounded mb-3"
+              style="max-height: 300px; object-fit: cover;">
+            <div class="icon-hover"><i class="fa-regular fa-newspaper fa-2x"></i></div>
+            <h5>Laudos e Vistorias</h5>
+            <p class="flex-grow-1">
+              Laudos técnicos e ARTs com regularização junto ao CBMERJ.
+            </p>
+          </div>
         </div>
-        <div class="col-12 col-md-4 text-center">
-          <img src="assets/img/consultoria.jpg" alt="Certificados" class="img-fluid rounded mb-3"
-            style="max-height: 300px; object-fit: cover;">
-          <h5>Consultoria e acompanhamento</h5>
-          <p>Consultoria eacompanhamento técnico de todo ppci realizado.
-          </p>
+
+        <!-- Coluna 3 -->
+        <div class="col-12 col-md-4">
+          <div class="d-flex flex-column h-100 text-center p-3 border rounded position-relative overflow-hidden">
+            <img src="assets/img/consultoria.jpg" alt="Certificados" class="img-fluid rounded mb-3"
+              style="max-height: 300px; object-fit: cover;">
+            <div class="icon-hover"><i class="fa-solid fa-fire-extinguisher fa-2x"></i></div>
+            <h5>Consultoria e Acompanhamento</h5>
+            <p class="flex-grow-1">
+              Consultoria e acompanhamento técnico de todo PPCI realizado.
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- SEÇÃO DE CLIENTES ATENDIDOS COM CONTADOR -->
-  <section id="clientesContador" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Nossa Experiência</h2>
-      <p class="mb-4">A satisfação dos nossos parceiros reflete o compromisso da RedSafe.</p>
 
-      <div class="d-flex justify-content-center align-items-center gap-3 fs-1 fw-bold">
-        <span>Clientes Atendidos:</span>
-        <span id="contadorClientes">0</span>
+
+<!-- SEÇÃO DE CREDENCIAMENTO -->
+<section id="clientesContador" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Empresa em parceria nos principais Órgãos Reguladores.</h2>
+    <p class="mb-5">
+      Embasamento técnico nas NTs – normas técnicas, INs – instruções normativas, diretrizes e artigos das principais instituições do setor.
+    </p>
+
+     <!-- Logos dos órgãos -->
+    <div class="row g-4">
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <img src="assets/img/crea.rj.webp" alt="INMETRO"  style="max-height: 150;">
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <img src="assets/img/bombeiro.png" alt="Corpo de Bombeiros"  style="max-height: 150;">
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <img src="assets/img/abnt.webp" alt="ABNT"  style="max-height: 150;">
+      </div>
+      <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+        <img src="assets/img/inmetro.png" alt="CREA"  style="max-height: 150;">
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <script>
     const contadorEl = document.getElementById('contadorClientes');
@@ -188,23 +230,24 @@
       <form action="enviar.php" method="POST" style="max-width: 500px; margin: 0 auto;">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
         </div>
+
 
         <div class="mb-3">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
         </div>
 
         <div class="mb-3">
           <label for="telefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+          <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone">
         </div>
 
         <div class="mb-3">
           <label for="mensagem" class="form-label">Mensagem</label>
           <textarea class="form-control" id="mensagem" name="mensagem" rows="4"
-            placeholder="Escreva sua mensagem aqui..." required></textarea>
+            placeholder="De qual serviço está precisando?" required></textarea>
         </div>
 
         <div class="text-center">

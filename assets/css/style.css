@@ -19,13 +19,16 @@ body {
   color: #f44336 !important;
 }
 
-..navbar-nav .nav-link {
-  color: #333; /* cor padrão */
+.navbar-nav .nav-link {
+  color: #333;
+  /* cor padrão */
   transition: color 0.3s ease;
 }
+
 /* Navbar link hover com vermelho btn-danger */
 .navbar-nav .nav-link:hover {
-  color: #dc3545; /* cor do btn-danger */
+  color: #dc3545;
+  /* cor do btn-danger */
 }
 
 
@@ -52,32 +55,6 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-
-/* === HEADER === */
-header {
-  background: url('../img/fundo.jpg') center center/cover;
-  height: 100vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-/* Sombra escura sobre a imagem de fundo */
-header::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-header .content {
-  z-index: 2;
-}
-
 /* === SEÇÕES === */
 section {
   padding: 60px 0;
@@ -98,52 +75,161 @@ footer {
 }
 
 header#home {
-  
-  /* Define a imagem de fundo, centralizada, cobrindo toda a área */
-  background-image: url('../img/home.png'); /* seu caminho da imagem */
+  position: relative;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+header#home .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: rgba(50, 50, 50, 0.4); /* cinza translúcido */
+  z-index: 1;
+  /* Aqui a "imagem de fundo" da overlay aparece com a cor cinza misturada */
+  mix-blend-mode: multiply; /* Faz a imagem "escurecer" com o fundo cinza */
 
-  height: 100vh; /* altura total da viewport */
-  color: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  position: relative;
-  padding: 0 20px;
 }
+
+header#home .content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  transform: translateX(-5cm);
+  /* desloca para a esquerda */
+  text-align: left;
+}
+
+
 
 /* Para melhorar a leitura, adiciona uma camada escura por cima da imagem */
 header#home::before {
   content: "";
   position: absolute;
-  inset: 0; /* top, right, bottom, left = 0 */
-  background: rgba(0, 0, 0, 0.6); /* sombra preta semitransparente */
+  inset: 0;
+  /* top, right, bottom, left = 0 */
+  background: rgba(0, 0, 0, 0.6);
+  /* sombra preta semitransparente */
   z-index: 0;
 }
 
-/* Conteúdo dentro do header fica acima da camada escura */
-header#home .content {
-  position: relative;
-  z-index: 1;
-}
-
-/* Ajuste dos textos */
 header#home h1 {
-  font-weight: 700;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  /* aumenta o tamanho do título */
+  font-weight: bold;
+  line-height: 1.3;
+  padding-left: 20px;
+  /* mantém a barra vermelha à esquerda */
+  border-left: 6px solid #d40000;
 }
 
-header#home p.lead {
-  font-size: 1.5rem;
-  font-weight: 300;
+header#home .lead {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20c05a;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  margin-right: 12px;
+}
+
+.decorativo {
+  color: red;
+  font-size: 1.3rem;
+  margin-left: 8px;
+}
+
+
+
+@media (max-width: 576px) {
+  header#home .content {
+    transform: none;
+    /* remove o deslocamento */
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  header#home h1 {
+    font-size: 2rem;
+    /* tamanho menor para telas pequenas */
+    padding-left: 12px;
+    border-left: 4px solid #d40000;
+    text-align: center;
+    /* centraliza no mobile */
+  }
+
+  header#home .lead {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-align: center;
+
+  }
+
+  .btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: background 0.3s;
+  }
+
+
+  .btn-whatsapp:hover {
+    background-color: #20c05a;
+  }
+
+  .contact-info {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+
+  }
+
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+
+  .decorativo {
+    color: red;
+    font-size: 1.3rem;
+    margin-left: 8px;
+  }
+
+  /*
+  header#home p.lead {
+    font-size: 1.1rem;
+  }
+
+  header#home .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  */
 }
 
 
@@ -158,7 +244,7 @@ header#home p.lead {
   /* cinza escuro (#2c2c2c) para vermelho fogo (#b22222) */
   color: white;
   padding: 60px 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .sobre-section .section-title {
@@ -179,8 +265,15 @@ header#home p.lead {
 }
 
 .sobre-section .row {
-  align-items: center; /* já tá, só reforçando */
+  align-items: center;
+  /* já tá, só reforçando */
 }
+
+#servicos p {
+  min-height: 100px;
+  /* Ajuste conforme necessário */
+}
+
 
 .sobre-section img {
   max-width: 400px;
@@ -189,24 +282,21 @@ header#home p.lead {
   display: block;
   margin: 0 auto;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .sobre-section .col-md-6.text-white {
-  padding-left: 30px; /* espaço à esquerda do texto */
+  padding-left: 30px;
+  /* espaço à esquerda do texto */
   padding-right: 15px;
 }
 
 .destaque {
-  color: white;
+  color: rgb(184, 21, 21);
   font-weight: 900;
   font-size: 1.4em;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  -webkit-text-stroke: 1.5px #b22222; /* contorno vermelho */
-  text-shadow:
-    2px 2px 5px rgba(178, 34, 34, 0.7),
-    0 0 10px #b22222;
+
 }
 
 /* Fade In */
@@ -215,8 +305,13 @@ header#home p.lead {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Slide Up */
@@ -247,52 +342,100 @@ header#home p.lead {
   }
 }
 
-  .btn-whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
 
-  .btn-whatsapp:hover {
-    background-color: #1ebe57;
-  }
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
 
-  #clientes {
-  margin-bottom: 60px; /* Espaço abaixo da seção clientes */
+#clientes {
+  margin-bottom: 60px;
+  /* Espaço abaixo da seção clientes */
 }
 
 #sobre {
-  margin-top: 60px; /* Espaço acima da seção sobre */
+  margin-top: 60px;
+  /* Espaço acima da seção sobre */
 }
 
 #servicos {
-  margin-bottom: 60px; /* Espaço acima da seção sobre */
+  margin-bottom: 60px;
+  /* Espaço acima da seção sobre */
 }
 
- #contato {
-    background-color: #f8f9fa; /* cor clara para a seção */
-  }
-  #contato .form-control {
-    border-radius: 8px;
-  }
-  #contato .btn-primary {
-    background-color: #007bff;
-    border: none;
-    border-radius: 8px;
-  }
-  #contato .btn-primary:hover {
-    background-color: #0056b3;
-  }
+#contato {
+  background-color: #f8f9fa;
+  /* cor clara para a seção */
+}
+
+#contato .form-control {
+  border-radius: 8px;
+}
+
+#contato .btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+}
+
+#contato .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+/*icone img 
+*/
+.position-relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.icon-hover {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.d-flex.flex-column.position-relative:hover .icon-hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.svg-icon {
+  width: 80px; /* Ou maior, ex: 100px */
+  height: 80px;
+  display: block;
+}
+
+.grayscale-hover {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.grayscale-hover:hover {
+  filter: grayscale(0%);
+}

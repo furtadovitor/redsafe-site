@@ -14,11 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Define o e-mail de destino
-    $para = "contato@tmfiresafe.com"; // <-- SUBSTITUA pelo seu e-mail
+    $para = "contato@tmfiresafe.com.br"; // <-- SUBSTITUA pelo seu e-mail
     $assunto = "Nova mensagem do site";
 
     // Monta o corpo do e-mail
-    $conteudo = "Nova mensagem do formulário:\n\n";
+    $conteudo = "Nova mensagem do formulario:\n\n";
     $conteudo .= "Nome: $nome\n";
     $conteudo .= "E-mail: $email\n";
     $conteudo .= "Telefone: $telefone\n";
