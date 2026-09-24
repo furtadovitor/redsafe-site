@@ -1,10 +1,10 @@
 
 const imagens = [
   'assets/img/home.png',
-  'assets/img/back2.jpeg',
-  'assets/img/beck3.jpeg',
+  'assets/img/home2.png',
+  'assets/img/home3.png',
   'assets/img/home.png',
-  'assets/img/home.png'
+  'assets/img/home3.png'
 ];
 
  let index = 0;

@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-  color: #333;
+  color: #faf9f9;
   /* cor padrão */
   transition: color 0.3s ease;
 }
@@ -163,24 +163,22 @@ header#home .lead {
 @media (max-width: 576px) {
   header#home .content {
     transform: none;
-    /* remove o deslocamento */
     padding: 0 20px;
     text-align: center;
   }
 
   header#home h1 {
-    font-size: 2rem;
-    /* tamanho menor para telas pequenas */
+    font-size: 2.1rem; /* menor fonte */
+    letter-spacing: -0.5px; /* letras mais juntas */
     padding-left: 12px;
     border-left: 4px solid #d40000;
-    text-align: center;
-    /* centraliza no mobile */
+    text-align: left; /* mais pra esquerda */
   }
 
   header#home .lead {
     font-size: 1.1rem;
     margin-top: 1rem;
-    text-align: center;
+        text-align: left; /* mais pra esquerda */
 
   }
 
@@ -195,7 +193,6 @@ header#home .lead {
     transition: background 0.3s;
   }
 
-
   .btn-whatsapp:hover {
     background-color: #20c05a;
   }
@@ -204,7 +201,6 @@ header#home .lead {
     margin-top: 1.5rem;
     font-size: 1rem;
     text-align: center;
-
   }
 
   .contact-info a {
@@ -218,18 +214,6 @@ header#home .lead {
     font-size: 1.3rem;
     margin-left: 8px;
   }
-
-  /*
-  header#home p.lead {
-    font-size: 1.1rem;
-  }
-
-  header#home .btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-
-  */
 }
 
 
